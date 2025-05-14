@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-WORKDIR /LSEG/job-monitor
+WORKDIR /app
 
 RUN apt-get -o Acquire::AllowInsecureRepositories=true update && \
     apt-get -o Acquire::AllowInsecureRepositories=true install -y --no-install-recommends \
@@ -13,6 +13,6 @@ RUN pip install --upgrade pip && \
 
 COPY . .
 
-ENV PYTHONPATH=/LSEG/job-monitor/src:$PYTHONPATH
+ENV PYTHONPATH=/app/src
 
 CMD ["python", "src/jobMonitor.py"]

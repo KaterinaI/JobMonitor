@@ -1,5 +1,5 @@
 # Job Monitor Application
-
+Name: Aikaterini Ilia
 ## Description
 
 Processes job logs to match START/END events, compute durations of completion, and classify performance alerts.
@@ -24,7 +24,7 @@ To run this project, you'll need the following:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://your-repository-url.git
+   git clone https://github.com/KaterinaI/JobMonitor.git
    cd job-monitor
 
 ## Running in Docker
