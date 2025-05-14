@@ -25,7 +25,7 @@ To run this project, you'll need the following:
 
    ```bash
    git clone https://github.com/KaterinaI/JobMonitor.git
-   cd job-monitor
+   cd JobMonitor/LSEG/job-monitor
 
 ## Running in Docker
 
