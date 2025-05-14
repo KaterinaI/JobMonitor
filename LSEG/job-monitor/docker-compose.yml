@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    environment:
+      - PYTHONPATH=/LSEG/job-monitor/src:$PYTHONPATH
+    volumes:
+      - .:/app
+    command: python src/jobMonitor.py
+
+  test:
+    build: .
+    environment:
+      - PYTHONPATH=/LSEG/job-monitor/src:$PYTHONPATH
+    volumes:
+      - .:/app
+    command: python -m unittest discover -s tests
